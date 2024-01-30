@@ -1,0 +1,21 @@
+delimiter //
+create procedure  getData(in id int,out name varchar(20))
+begin
+select ename into name from dummy where eid=id;
+end;
+//
+
+
+execute the procedure 
+
+call getData(11,@name);
+select @name;
+
+
+to switch of delimiter
+
+delimiter ;
+
+
+
+
