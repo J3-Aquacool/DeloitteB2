@@ -14,9 +14,9 @@ public class ProceduresDemo {
 		Connection c=DriverManager.getConnection("jdbc:mysql://localhost:3305/p9batch","root","admin");
     	System.out.println("connected");
     	// caling store procedure
-    	CallableStatement cst=c.prepareCall("{showData(?,?)}");
+    	CallableStatement cst=c.prepareCall("{call showData(?,?)}");
     	 
-    	cst.setInt(1, 105);
+    	cst.setInt(1,105);
     	 
     	 cst.registerOutParameter(2,Types.VARCHAR);
      	    	 
