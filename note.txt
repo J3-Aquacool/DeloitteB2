@@ -1,0 +1,141 @@
+
+Connection
+method
+createStatement();
+prepareStatement("insert into employee values(?,?)");
+prepareCall(String query);
+
+
+setAutoCommit(boolean);
+commit();
+rollback();
+
+
+
+
+Statement
+
+methods
+executeUpdate(String query);
+executeQuery(String query);
+execute(String query);
+addBatch();
+
+
+PreparedStatement extends Statement
+
+methods
+executeUpdate();
+executeQuery();
+execute();
+
+
+// When a given query has t be execute for mulitple times
+
+
+
+Abhinav has created Employment Form/Page
+
+employee
+ 10 employee
+[name]
+
+[age]
+
+[gender]
+
+
+[salary]
+
+
+
+st.executeUpdate("insert into employee values(10,'aaa')");--->10
+
+Template of that query----> pre-compiled
+
+
+
+commit(): save the cahnges permanently
+rollback(): undo
+
+
+
+
+
+
+
+Oracle
+
+
+insert into  
+
+select * from tablenae;
+
+
+commit;
+
+
+
+
+CallableStatement extends PreparedStatement
+
+
+
+create table tablename(columnam datatype);
+
+
+
+// 
+
+create procedure showData()
+begin
+// query
+end
+// USE CASE
+
+
+
+create procedure showData( IN empid int,OUT empname varchar(20))
+begin
+select ename into empname from dummy where eid=empid;
+end
+
+showData(10,'aaa');
+
+
+
+
+
+select * from dummy where eid=105;
+
+select ename from dummy where eid=105;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+method()
+{
+
+}
+
+
+
+
+
